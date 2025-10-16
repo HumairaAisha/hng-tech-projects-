@@ -7,17 +7,18 @@
    <title>Profile Card</title>
 </head>
 <body>
- <article data-testid="test-profile-card">
+ <article data-testid="test-profile-card" class="profile-card">
    <header>
-      <h2 data-testid="test-user-name">Aisha Muhyiddeen</h2>
+      <h2 data-testid="test-user-name">Aisha Muhyiddeen Ahmad</h2>
    </header>
    <figure>
-      <img src="Copy of IMG_2303.jpg" alt="" data-testid="test-user-avatar" target="_blank" rel="noopener noreferrer">
+      <img src="Copy of IMG_2303.jpg" alt="profile-image" class="my-img" data-testid="test-user-avatar" target="_blank" rel="noopener noreferrer">
    </figure>
-   <p data-testid="test-user-bio"></p>
+   <p data-testid="test-user-bio" class="my-bio"> Passionate about building community through technology and storytelling. 
+    Software Engineer, and lifelong learner.</p>
    <p>Current Time: <span data-testid="test-user-time"></span></p>
 
-   <ul>
+   <ul data-testid="test-user-social-links" class="social-links">
       <li><a href="" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
       <li><a href="" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-facebook">Facebook</a></li>
       <li><a href="" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
@@ -26,7 +27,7 @@
 
    <section>
       <h3>Hobbies</h3>
-      <ul data-testid="test-user-hobbies">
+      <ul data-testid="test-user-hobbies" class="hobbies">
          <li>Coding</li>
          <li>Learning</li>
          <li>StoryTelling</li>
@@ -34,7 +35,8 @@
    </section>
 
    <section>
-      <ul data-testid="test-user-dislikes">
+      <h3>Dislikes</h3>
+      <ul data-testid="test-user-dislikes" class="dislikes">
          <li>Procastination</li>
          <li>Disappaointment</li>
          <li>Working on deadlines</li>
