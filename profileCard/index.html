@@ -4,28 +4,31 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
    <title>Profile Card</title>
 </head>
 <body>
  <article data-testid="test-profile-card" class="profile-card">
-   <header>
-      <h2 data-testid="test-user-name">Aisha Muhyiddeen Ahmad</h2>
-   </header>
-   <figure>
+    <figure>
       <img src="Copy of IMG_2303.jpg" alt="profile-image" class="my-img" data-testid="test-user-avatar" target="_blank" rel="noopener noreferrer">
    </figure>
-   <p data-testid="test-user-bio" class="my-bio"> Passionate about building community through technology and storytelling. 
-    Software Engineer, and lifelong learner.</p>
-   <p>Current Time: <span data-testid="test-user-time"></span></p>
+  <div class="profile-content">
+    <header>
+      <h2 data-testid="test-user-name">Aisha Muhyiddeen Ahmad</h2>
+   </header>
+  
+   <p data-testid="test-user-bio" class="my-bio">Software Engineer, Passionate about building community through technology and storytelling. 
+   and lifelong learner.</p>
+   <p>Current Time (ms): <span data-testid="test-user-time"></span></p>
 
    <ul data-testid="test-user-social-links" class="social-links">
-      <li><a href="" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
-      <li><a href="" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-facebook">Facebook</a></li>
-      <li><a href="" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
-      <li><a href="" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+      <li><a href="" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+      <li><a href="" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-facebook"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter"><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href="" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github"><i class="fa-brands fa-github"></i></a></li>
    </ul>
 
-   <section>
+   <section class="hobbies-section">
       <h3>Hobbies</h3>
       <ul data-testid="test-user-hobbies" class="hobbies">
          <li>Coding</li>
@@ -34,8 +37,8 @@
       </ul>
    </section>
 
-   <section>
-      <h3>Dislikes</h3>
+   <section class="dislike-sec">
+      <h3 class="personal-title">Dislikes</h3>
       <ul data-testid="test-user-dislikes" class="dislikes">
          <li>Procastination</li>
          <li>Disappaointment</li>
@@ -46,6 +49,7 @@
 
  </article>
    
+  </div>
    <script src="index.js"></script>
 </body>
 </html>
