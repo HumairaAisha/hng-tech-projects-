@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="contact.css">
+   <title>Contact Us</title>
+</head>
+<body>
+      
+   <form class="form" id="form">
+   <button class="btn-home" data-testid="test-button-home"><a href="index.html">Home</a></button>
+      <label for="name">Full name</label>
+      <input type="text" id="name" required data-testid="test-contact-name" aria-describedby="test-contact-error-name">
+      <span data-testid="test-contact-error-name" id="nameError"></span>
+      <br>
+      <label for="email">Email</label>
+      <input type="email" id="email" required data-testid="test-contact-email" aria-describedby="test-contact-error-email">
+      <span data-testid="test-contact-error-email" id="emailError"></span>
+      <br>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" required data-testid="test-contact-subject" aria-describedby="test-contact-error-subject">
+      <span data-testid="test-contact-error-subject" id="subjectError"></span>
+      <br>
+      <label for="message">Message</label>
+      <textarea name="message" id="message" data-testid="test-contact-message" minlength="10" required aria-describedby="test-contact-error-message"></textarea>
+      <span data-testid="test-contact-error-message" id="messageError"></span>
+      <br>
+      <button data-testid="test-contact-submit">Submit</button>
+   </form>
+   <p data-testid="test-contact-success" id="sucsess-msg"></p>
+   
+</body>
+</html>
