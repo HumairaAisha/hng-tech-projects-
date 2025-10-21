@@ -19,7 +19,7 @@ body {
 .profile-card {
   display: flex;
   flex-direction: column; 
-  background-color: beige;
+  background-color: white;
   padding: 1.5rem;
   border-radius: 10px;
   width: 90%;
@@ -87,6 +87,20 @@ section h3 {
 ul.hobbies, ul.dislikes {
   list-style: disc;
   margin-left: 1.5rem;
+}
+
+.btn{
+  background-color: #0077b6;
+  margin-top: 8px;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+}
+.btn a{
+  text-decoration: none;
+  color: #ffff;
+  
 }
 
 
