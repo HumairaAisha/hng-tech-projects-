@@ -19,7 +19,7 @@ function validate(name, email, subject, message) {
    }
    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
    if (!emailPattern.test(email)) {
-      emailError.textContent = 'enter valid email'
+      emailError.textContent = 'Email must be valid (name@example.com)'
       valid = false
    }
    if (!subject) {
