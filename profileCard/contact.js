@@ -1,5 +1,5 @@
-const form = document.querySelectorAll("form")
-const sucessMsg = document.getElementById("sucsess-msg")
+const form = document.querySelector("form")
+const sucessMsg = document.getElementById("success-msg")
 const nameError = document.getElementById('nameError')
 const emailError = document.getElementById("emailError")
 const subjectError = document.getElementById("subjectError")
